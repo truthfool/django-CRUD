@@ -1,0 +1,10 @@
+{% extends 'base.html' %} 
+
+
+{% block content %} 
+    {% for user in post_value %}
+        <ul>
+        <li> {{user.firstname}} {{user.lastname}}</li>
+        </ul>
+    {% endfor %} 
+{% endblock %}
